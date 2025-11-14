@@ -61,5 +61,4 @@ Select * from cuentas;
 
 Select * from logs;
 
-
-Select * from logs;
+Select * from proyectos;
