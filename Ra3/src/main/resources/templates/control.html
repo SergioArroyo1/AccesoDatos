@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de usuarios</title>
+    <!-- Estilos del panel admin -->
+    <link rel="stylesheet" th:href="@{/css/AdminController.css}">
+</head>
+<body>
+<h2>Gestión de usuarios</h2>
+
+<!-- Barra de acciones arriba -->
+<div id="acciones">
+    <button id="volver">Volver</button>
+</div>
+
+<!-- Contenedor de la tabla de usuarios -->
+<div id="datosMostrar"></div>
+
+<!-- Controlador JS que gestiona la tabla (Lista.js) -->
+<script th:src="@{/js/Lista.js}"></script>
+</body>
+</html>

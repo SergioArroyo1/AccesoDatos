@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Usuario</title>
+    <!-- Estilos de la vista de usuario -->
+    <link rel="stylesheet" th:href="@{/css/UserController.css}">
+</head>
+<body>
+<!-- Saludo con el username -->
+<div class="saludoUsuario">
+    <h2 id="saludoUsuario"></h2>
+</div>
+
+<!-- Contenedor donde se construye la tabla con sus datos -->
+<div class="datosMostrar" id="datosMostrar"></div>
+
+<!-- Cerrar sesión -->
+<button id="btnSalir">Salir</button>
+
+<!-- Controlador JS para cargar y editar datos del usuario -->
+<script th:src="@{/js/UserController.js}"></script>
+</body>
+</html>

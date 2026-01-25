@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Departamentos</title>
+    <!-- Estilos del panel admin -->
+    <link rel="stylesheet" th:href="@{/css/AdminController.css}">
+</head>
+<body>
+<h2>Departamentos</h2>
+
+<!-- Controles para crear nuevo departamento y volver -->
+<div style="margin-bottom: 12px;">
+    <input id="nuevoNombre" type="text" placeholder="Nombre del departamento" />
+    <button id="btnCrear">Crear</button>
+    <button id="volver">Volver</button>
+</div>
+
+<!-- Contenedor donde se renderiza la tabla de departamentos -->
+<div id="contenedorDepartamentos"></div>
+
+<!-- Controlador JS de departamentos -->
+<script th:src="@{/js/Departamentos.js}"></script>
+</body>
+</html>

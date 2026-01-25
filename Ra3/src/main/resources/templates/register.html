@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrarse</title>
+    <!-- CSS común (puede reutilizar estilos) -->
+    <link rel="stylesheet" th:href="@{/css/UserController.css}">
+    <style>
+        /* Estilos específicos del formulario de registro */
+        .form-container { max-width: 420px; margin: 40px auto; padding: 24px; border: 1px solid #ddd; border-radius: 8px; background: #fff; }
+        .form-group { margin-bottom: 14px; }
+        .form-group label { display: block; margin-bottom: 6px; font-weight: 600; }
+        .form-group input { width: 100%; padding: 8px 10px; }
+        .actions { display: flex; gap: 10px; }
+        .error { color: #b00020; margin-top: 8px; }
+        .success { color: #0b8043; margin-top: 8px; }
+    </style>
+</head>
+<body>
+<!-- Página de registro: pide username, email y password -->
+<div class="form-container">
+    <h2>Crear cuenta</h2>
+
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="tu usuario" />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="tu@email.com" />
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="••••••••" />
+    </div>
+
+    <div class="actions">
+        <!-- Envia POST /registro vía JS -->
+        <button id="btnRegistrar">Registrarse</button>
+        <!-- Regresa al index (login) -->
+        <button id="btnVolver">Volver</button>
+    </div>
+
+    <!-- Zona de mensajes de error/éxito -->
+    <p id="msg" class=""></p>
+</div>
+
+<!-- Controlador JS de la página -->
+<script th:src="@{/js/RegisterController.js}"></script>
+</body>
+</html>

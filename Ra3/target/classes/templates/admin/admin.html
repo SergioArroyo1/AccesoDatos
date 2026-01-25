@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel del Administrador</title>
+    <!-- Estilos del panel admin -->
+    <link rel="stylesheet" th:href="@{/css/AdminController.css}">
+</head>
+<body>
+
+<!-- Saludo -->
+<div class="saludoUsuario">
+    <h2 id="saludoUsuario"></h2>
+</div>
+
+<!-- Tarjeta con datos del admin -->
+<div class="mostrarDatos" id="datosMostrar"></div>
+
+<!-- Botones de navegación del panel -->
+<div class="botonesAdmin">
+    <button id="btnUsuarios">Ver usuarios</button>
+    <button id="btnDepartamentos">Departamentos</button>
+    <button id="btnSalir">Salir</button>
+</div>
+
+<!-- JS controlador de la página admin -->
+<script th:src="@{/js/AdminController.js}"></script>
+</body>
+</html>
